@@ -1,5 +1,5 @@
 x = input("Podaj liczby oddzielone przecinkami (,): ")
 
-l = list(map(int, x.split(',')))
-print(*l,sep=' + ', end='' )
-print(f' = {sum(l)}')
+l = x.split(',')
+ll = [int(x) for x in l]
+print(" + ".join(l), " = ", sum(ll))

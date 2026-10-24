@@ -1,7 +1,7 @@
 
 x = input("Podaj liczbę: ")
 
-if (x.isdecimal):
-    print("Podano liczbę całkowitą")
+if (x.isdigit()):
+    print("Podano liczbę naturalna")
 else:
-    print("Nie podano liczby całkowitej")
+    print("Nie podano liczby naturalnej")
