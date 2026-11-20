@@ -12,10 +12,10 @@ class sortTest(unittest.TestCase): #Klasa testu jednostkowego, argument pozwala 
 
     #self to odwołanie do stworzonego obiektu
 
-    def test_sorted(self): #przypadek posortowanej listy -> zakładamy True
+    def test_sorted(self): #przypadek posortowanej listy -> oczekujemy True
         self.assertTrue(sorted_asc([1,2,3,4]))
 
-    def test_not_sorted(self): #przypadek nieposortowanej listy -> zakładamy False
+    def test_not_sorted(self): #przypadek nieposortowanej listy -> oczekujemy False
         self.assertFalse(sorted_asc([1,2,3,2])) 
 
 unittest.main() #wywołanie metody przeprowadzającej test jednostkowy
